@@ -1,4 +1,4 @@
-package com.KateRom.app.Lesson2Classwork;
+package com.KateRom.app.classwork.Lesson2;
 
 public class NarrowingCasting {
     int int1 = 0;

@@ -1,4 +1,4 @@
-package com.KateRom.app.Lesson1;
+package com.KateRom.app.classwork.Lesson1;
 
 import java.util.Scanner;
 

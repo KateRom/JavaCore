@@ -1,4 +1,4 @@
-package com.KateRom.app.Lesson2Classwork;
+package com.KateRom.app.classwork.Lesson2;
 
 public class WideningCasting {
     byte byte1 = 127;
