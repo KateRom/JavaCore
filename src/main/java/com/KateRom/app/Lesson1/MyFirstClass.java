@@ -1,6 +1,7 @@
-package Lesson1;
+package com.KateRom.app.Lesson1;
 
 import java.util.Scanner;
+
 public class MyFirstClass {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

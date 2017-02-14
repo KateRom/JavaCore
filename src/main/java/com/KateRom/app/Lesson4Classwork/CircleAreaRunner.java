@@ -1,4 +1,4 @@
-package com.KateRom.app.utils.runners.lesson4Class;
+package com.KateRom.app.Lesson4Classwork;
 
 public class CircleAreaRunner {
     public static void main (String args[]) {
