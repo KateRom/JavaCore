@@ -2,9 +2,9 @@ package com.KateRom.app.classwork.Lesson4;
 
 import java.util.Scanner;
 
+@SuppressWarnings("WeakerAccess")
 public class CalculateBigger {
-    public static final double PI = 3.14d;
-
+    @SuppressWarnings("WeakerAccess")
     public static double areaCalculator() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter radius value: ");
@@ -13,7 +13,6 @@ public class CalculateBigger {
     }
 
     public static void calculateBiggerArea() {
-        CalculateBigger formula1 = new CalculateBigger();
         double circleArea1 = areaCalculator();
         double circleArea2 = areaCalculator();
 
