@@ -1,6 +1,6 @@
 package com.KateRom.app.utils.convertors;
 
-public class PrimitiveConvertor {
+public class PrimitiveConverter {
 
     public char floatToChar(float aFloat) {
         char aChar = (char) aFloat;
