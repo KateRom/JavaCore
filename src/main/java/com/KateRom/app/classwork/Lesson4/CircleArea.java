@@ -1,14 +1,8 @@
 package com.KateRom.app.classwork.Lesson4;
 
-import java.util.Scanner;
-
 public class CircleArea {
-    public static void calculate() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter radius value: ");
-        double radius = scanner.nextDouble();
-        double CircleArea = Math.PI * radius * radius;
-        System.out.println("Area is " + CircleArea);
+    public static double calculate(double radius) {
+        return Math.PI * radius * radius;
     }
 }
 
