@@ -1,6 +1,5 @@
-package com.KateRom.app.utils.homework.lesson3;
+package com.KateRom.app.utils.homework.lesson2;
 
-import com.KateRom.app.utils.homework.lesson2.PrimitiveConverter;
 import org.junit.Assert;
 import org.junit.Test;
 

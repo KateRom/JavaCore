@@ -1,6 +1,5 @@
-package com.KateRom.app.utils.homework.lesson3;
+package com.KateRom.app.utils.classwork.lesson2;
 
-import com.KateRom.app.utils.classwork.lesson2.WideningCasting;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
