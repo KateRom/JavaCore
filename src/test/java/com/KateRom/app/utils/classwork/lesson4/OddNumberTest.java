@@ -14,4 +14,9 @@ public class OddNumberTest {
         int a = 3;
         Assert.assertArrayEquals(new boolean[]{OddNumber.isNumberOdd(a)}, new boolean[]{true});
     }
+    @Test
+    public void isItOddMinusTest () {
+        int a = -3;
+        Assert.assertArrayEquals(new boolean[]{OddNumber.isNumberOdd(a)}, new boolean[]{true});
+    }
 }

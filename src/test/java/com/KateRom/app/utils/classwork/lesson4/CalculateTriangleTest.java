@@ -42,5 +42,26 @@ public class CalculateTriangleTest {
         double c = 0;
         Assert.assertArrayEquals(new boolean[]{CalculateTriangle.isITRightAngled(a, b, c)}, new boolean[]{false});
     }
+    @Test
+    public void isItRightAngledWithZeroTest4 () {
+        double a = 107.0;
+        double b = 0;
+        double c = 4.6;
+        Assert.assertArrayEquals(new boolean[]{CalculateTriangle.isITRightAngled(a, b, c)}, new boolean[]{false});
+    }
+    @Test
+    public void isItRightAngledMinusTest () {
+        double a = -1;
+        double b = -2;
+        double c = -3;
+        Assert.assertArrayEquals(new boolean[]{CalculateTriangle.isITRightAngled(a, b, c)}, new boolean[]{false});
+    }
+    @Test
+    public void isItRightAngledMinusTest2 () {
+        double a = 20.6;
+        double b = -2;
+        double c = 40.6;
+        Assert.assertArrayEquals(new boolean[]{CalculateTriangle.isITRightAngled(a, b, c)}, new boolean[]{false});
+    }
 }
 

@@ -14,20 +14,20 @@ public class CalculateTriangleRunner {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Enter first value of your triangle: ");
             double a = scanner.nextDouble();
-            if (a == 0) {
-                System.out.println("There is no triange with side = 0.");
+            if (a <= 0) {
+                System.out.println("There is no triange with side less or equal to 0.");
                 break;
             }
             System.out.println("Enter second value of your triangle: ");
             double b = scanner.nextDouble();
-            if (b == 0) {
-                System.out.println("There is no triange with side = 0.");
+            if (b <= 0) {
+                System.out.println("There is no triange with side less or equal to 0.");
                 break;
             }
             System.out.println("Enter third value of your triangle: ");
             double c = scanner.nextDouble();
-            if (c == 0) {
-                System.out.println("There is no triange with side = 0.");
+            if (c <= 0) {
+                System.out.println("There is no triange with side less or equal to 0.");
                 break;
             } else if (CalculateTriangle.isITRightAngled(a, b, c)) {
                 System.out.println("Triangle is right-angled");

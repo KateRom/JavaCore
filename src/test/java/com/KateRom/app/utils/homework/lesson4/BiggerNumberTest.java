@@ -25,4 +25,18 @@ public class BiggerNumberTest {
         double expResult = 9;
         Assert.assertEquals(expResult, BiggerNumber.whatNumberBigger(a, b), 0);
     }
+    @Test
+    public void whatNumberBiggerMinusTest () {
+        double a = -4.5;
+        double b = 4.5;
+        double expResult = 4.5;
+        Assert.assertEquals(expResult, BiggerNumber.whatNumberBigger(a, b), 0);
+    }
+    @Test
+    public void whatNumberBiggerZeroTest () {
+        double a = 0;
+        double b = 4.5;
+        double expResult = 4.5;
+        Assert.assertEquals(expResult, BiggerNumber.whatNumberBigger(a, b), 0);
+    }
 }
