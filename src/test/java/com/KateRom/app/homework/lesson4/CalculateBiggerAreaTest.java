@@ -26,6 +26,13 @@ public class CalculateBiggerAreaTest {
         Assert.assertEquals(expResult, CalculateBiggerArea.calculateBiggerArea(radius1, radius2), 0.1);
     }
     @Test
+    public void calculateBiggerAreaFalseTest () {
+        double radius1 = 8.6;
+        double radius2 = 3.0;
+        double expResult = 0.0;
+        Assert.assertNotEquals(expResult, CalculateBiggerArea.calculateBiggerArea(radius1, radius2), 0.1);
+    }
+    @Test(timeout = 10)
     public void calculateBiggerAreaZeroTest () {
         double radius1 = 0;
         double radius2 = 8.6;
