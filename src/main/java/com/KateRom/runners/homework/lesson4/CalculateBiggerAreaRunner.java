@@ -11,36 +11,31 @@ public class CalculateBiggerAreaRunner {
     }
 
     public static void menu3() {
-        while (true) {
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("Enter first radius value: ");
-            double radius1 = scanner.nextDouble();
-            if (radius1 <= 0) {
-                System.out.println("Radius value can not be less or equal 0. Please try again.");
-                break;
-            }
-            System.out.println("Enter second radius value: ");
-            double radius2 = scanner.nextDouble();
-            if (radius2 <= 0) {
-                System.out.println("Radius value can not be less or equal 0. Please try again.");
-                break;
-            }
-            double circleArea1 = CircleArea.calculate(radius1);
-            double circleArea2 = CircleArea.calculate(radius2);
-            if (CalculateBiggerArea.calculateBiggerArea(radius1, radius2) == circleArea1) {
-                System.out.println("First area: " + circleArea1 +
-                        "\n" + "Second area: " + circleArea2 +
-                        "\n" + "First area is bigger");
-                break;
-            } else if (CalculateBiggerArea.calculateBiggerArea(radius1, radius2) == circleArea2) {
-                System.out.println("First area: " + circleArea1 +
-                        "\n" + "Second area: " + circleArea2 +
-                        "\n" + "Second ares is bigger");
-                break;
-            } else {
-                System.out.println("First area: " + circleArea1 + " equals " + "second area: " + circleArea2);
-                break;
-            }
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter first radius value: ");
+        double radius1 = scanner.nextDouble();
+        if (radius1 <= 0) {
+            System.out.println("Radius value can not be less or equal 0. Please try again.");
+            return;
+        }
+        System.out.println("Enter second radius value: ");
+        double radius2 = scanner.nextDouble();
+        if (radius2 <= 0) {
+            System.out.println("Radius value can not be less or equal 0. Please try again.");
+            return;
+        }
+        double circleArea1 = CircleArea.calculate(radius1);
+        double circleArea2 = CircleArea.calculate(radius2);
+        if (CalculateBiggerArea.calculateBiggerArea(radius1, radius2) == circleArea1) {
+            System.out.println("First area: " + circleArea1 +
+                    "\n" + "Second area: " + circleArea2 +
+                    "\n" + "First area is bigger");
+        } else if (CalculateBiggerArea.calculateBiggerArea(radius1, radius2) == circleArea2) {
+            System.out.println("First area: " + circleArea1 +
+                    "\n" + "Second area: " + circleArea2 +
+                    "\n" + "Second area is bigger");
+        } else {
+            System.out.println("First area: " + circleArea1 + " equals " + "second area: " + circleArea2);
         }
     }
 }
