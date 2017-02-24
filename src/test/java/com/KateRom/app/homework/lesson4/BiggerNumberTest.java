@@ -1,9 +1,17 @@
 package com.KateRom.app.homework.lesson4;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 public class BiggerNumberTest {
+    BiggerNumber biggerNumber;
+
+    @Before
+    public void setUp(){
+        biggerNumber = new BiggerNumber();
+    }
+
     @Test
     public void whatNumberBiggerTest () {
         double a = 4.5;

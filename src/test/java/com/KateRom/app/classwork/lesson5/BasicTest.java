@@ -41,6 +41,7 @@ public class BasicTest {
         Assert.assertArrayEquals(expectedResults, inputData);
     }
 
+    @Ignore ("allways fail by timeout")
     @Test(timeout = 1000)
     public void infinityTest() {
         while (true) ;

@@ -1,14 +1,28 @@
 package com.KateRom.app.homework.lesson3;
 
+import junitparams.FileParameters;
+import junitparams.JUnitParamsRunner;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+
+@RunWith(JUnitParamsRunner.class)
 
 public class MathFunctionTest {
+    private static final String RESOURCES_PATH = "src/test/java/resources/";
+    MathFunction mathFunction;
+
+    @Before
+    public void setUp(){
+        mathFunction = new MathFunction();
+    }
+
+    @FileParameters(RESOURCES_PATH + "multiply_params.csv")
+
     @Test
-    public void devisiontest () {
-        double a = 9.9, b = 3.3;
-        double expResult = 3.;
-        Assert.assertEquals(expResult, MathFunction.division(a,b), 0.0001);
+    public void devisiontest (double a, double b, double expResult, boolean isTrue) {
+        Assert.assertEquals(isTrue,expResult == MathFunction.division(a,b));
     }
     @Test
     public void squareTest () {

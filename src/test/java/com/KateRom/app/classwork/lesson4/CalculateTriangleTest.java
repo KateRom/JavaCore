@@ -1,9 +1,17 @@
 package com.KateRom.app.classwork.lesson4;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 public class CalculateTriangleTest {
+    CalculateTriangle calculateTriangle;
+
+    @Before
+    public void setUp(){
+        calculateTriangle = new CalculateTriangle();
+    }
+
     @Test
     public void isItRightAngledTrueTest() {
         double a = 3;

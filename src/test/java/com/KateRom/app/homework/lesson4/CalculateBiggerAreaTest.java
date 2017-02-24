@@ -1,9 +1,16 @@
 package com.KateRom.app.homework.lesson4;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 public class CalculateBiggerAreaTest {
+    CalculateBiggerArea calculateBiggerArea;
+
+    @Before
+    public void setUp() {
+        calculateBiggerArea = new CalculateBiggerArea();
+    }
     @Test
     public void calculateBiggerAreaTest () {
         double radius1 = 8.6;

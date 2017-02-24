@@ -1,6 +1,7 @@
 package com.KateRom.app.homework.lesson3;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.Date;
@@ -8,6 +9,12 @@ import java.util.Locale;
 import java.util.Stack;
 
 public class DoubleFunctionTest {
+    DoubleFunction doubleFunction;
+
+    @Before
+    public void setUp() {
+        doubleFunction = new DoubleFunction();
+    }
     @Test
     public void doubleEqualsTest () {
         double obj1 = 10.0;

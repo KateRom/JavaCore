@@ -1,9 +1,16 @@
 package com.KateRom.app.classwork.lesson4;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 public class CircleAreaTest {
+    CircleArea circleArea;
+
+    @Before
+    public void setUp(){
+        circleArea = new CircleArea();
+    }
     @Test
     public void calculateTest() {
         double radius = 3.88;
