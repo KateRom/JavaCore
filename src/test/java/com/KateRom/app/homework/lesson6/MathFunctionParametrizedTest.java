@@ -1,4 +1,4 @@
-package com.KateRom.app.homework.lesson5;
+package com.KateRom.app.homework.lesson6;
 
 
 import com.KateRom.app.homework.lesson3.MathFunction;
