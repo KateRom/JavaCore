@@ -31,9 +31,9 @@ public class ChooseTheTaskRunner {
                         System.out.println("Program was stopped");
                         break;
                     } else
-                        System.out.println("You enter the number out fo range. Please enter right valuer (1, 2, 3, 4 or 5)");
+                        System.out.println("You enter the number out fo range. Please enter right valuer (1, 2, 3, 4 or 5). To stop the program enter: 0");
                 } catch (java.util.InputMismatchException e) {
-                System.out.println("You entered inappropriate value. Please enter one of next values 1, 2, 3, 4 or 5");
+                System.out.println("You entered inappropriate value. Please enter one of next values 1, 2, 3, 4 or 5. To stop the program enter: 0");
             }
         }
     }
