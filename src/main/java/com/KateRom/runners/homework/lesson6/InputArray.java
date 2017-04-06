@@ -7,20 +7,28 @@ public class InputArray {
     public static void main(String args[]) {
         ArrayList<Integer> aList = new ArrayList<Integer>();
         int[] inputArray = new int[8];
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number, after each number press ENTER. To stop print 'exit'.");
-        for (int i = 0; i==(int)i; i++) {
-            Scanner scanner = new Scanner(System.in);
-            try {
+        for (int i = 0; i <= aList.size(); i++) {
+            while (scanner.hasNextInt()) {
                 int a = scanner.nextInt();
                 aList.add(a);
                 System.out.println("Enter next number. To stop print 'exit'.");
-            } catch(java.util.InputMismatchException e){
+            }
+            scanner.hasNextLine();
+            String s = scanner.next();
+            if (s.equals("exit")){
                 System.out.println("You stopped entering numbers");
                 int sum = aList.stream().mapToInt(value -> value).sum();
                 System.out.println("Sum of all numbers you entered is " + sum);
+                break;
+            } else {
+                System.out.println("Inappropriate value. Try again");
             }
+
         }
     }
 }
+
 
 
