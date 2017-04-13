@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class InputArray {
     public static void main(String args[]) {
         ArrayList<Integer> aList = new ArrayList<Integer>();
-        int[] inputArray = new int[8];
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number, after each number press ENTER. To stop print 'exit'.");
         for (int i = 0; i <= aList.size(); i++) {
@@ -17,13 +16,14 @@ public class InputArray {
             }
             scanner.hasNextLine();
             String s = scanner.next();
-            if (s.equals("exit")){
-                System.out.println("You stopped entering numbers");
-                int sum = aList.stream().mapToInt(value -> value).sum();
-                System.out.println("Sum of all numbers you entered is " + sum);
-                break;
-            } else {
-                System.out.println("Inappropriate value. Try again");
+            switch (s){
+                case "exit":
+                    System.out.println("You stopped entering numbers");
+                    int sum = aList.stream().mapToInt(value -> value).sum();
+                    System.out.println("Sum of all numbers you entered is " + sum);
+                    break;
+                default:
+                    System.out.println("Inappropriate value. Try again");
             }
 
         }
