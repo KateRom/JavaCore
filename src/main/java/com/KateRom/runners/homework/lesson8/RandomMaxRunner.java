@@ -9,7 +9,7 @@ import java.util.Arrays;
 public class RandomMaxRunner {
     public static void main (String args[]){
         int[][] intArray = new int[8][5];
-        int[][] a = RandomMax.randomArray(intArray);
+        int[][] a = RandomMax.randomValueForArray(intArray);
         System.out.println(Arrays.deepToString(intArray));
         System.out.println(RandomMax.findMax(intArray));
     }

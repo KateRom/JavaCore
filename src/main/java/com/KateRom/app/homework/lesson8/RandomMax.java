@@ -6,7 +6,7 @@ import java.util.Random;
 /*Created by katr on 14.04.2017.
  */
 public class RandomMax {
-    public static int[][] randomArray(int[][] intArray) {
+    public static int[][] randomValueForArray(int[][] intArray) {
         Random rn = new Random();
         for (int i = 0; i < intArray.length; i++) {
             for (int k = 0; k < intArray[i].length; k++) {

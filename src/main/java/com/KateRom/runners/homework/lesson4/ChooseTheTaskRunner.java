@@ -17,10 +17,6 @@ public class ChooseTheTaskRunner {
         while (scanner.hasNextLine()) {
             try {
                     int callValue = Integer.parseInt(scanner.nextLine());
-                    if (callValue==0){
-                        System.out.println("Program was stopped");
-                        break;
-                    }
                 switch (callValue) {
                     case 1:
                         CalculateTriangleRunner.menu1();
@@ -40,7 +36,11 @@ public class ChooseTheTaskRunner {
                     default:
                         System.out.println("You enter the number out fo range.");
                         break;
-                }System.out.println("Enter 1, 2, 3, 4 or 5 to choose the task. Enter 0 to stop the program");
+                }  if (callValue==0){
+                    System.out.println("Program was stopped");
+                    break;
+                }
+                System.out.println("Enter 1, 2, 3, 4 or 5 to choose the task. Enter 0 to stop the program");
             }catch (java.lang.NumberFormatException e) {
                     System.out.println("You entered inappropriate value. " +
                             "Please enter one of next values 1, 2, 3, 4 or 5. To stop the program enter: 0");
