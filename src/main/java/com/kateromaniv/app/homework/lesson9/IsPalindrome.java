@@ -20,7 +20,7 @@ public class IsPalindrome {
         String s = "";
         p = p.toLowerCase();
         for (int i = 0; i<p.length(); i++){
-            s += p.charAt(p.length()-i-1);
+            s = p.charAt(i) + s;
         }
             return p.equals(s);
     }
@@ -38,19 +38,14 @@ public class IsPalindrome {
 
     public static boolean isPalindrome3(String p) {
         p = p.toLowerCase();
-        boolean isP = false;
         int i = (int)p.length()/ 2;
-        do{
         for (int j = 0; j <= p.length() / 2; j++) {
-            isP=false;
-            if (p.charAt(p.length() - i - 1) == p.charAt((int) p.length() / 2 - j)) {
-                isP = true;
-            } else {
-                isP = false;
-            }i--;
+            if (p.charAt(p.length() - i - 1) != p.charAt((int) p.length() / 2 - j)) {
+                return false;
+            }
+            i--;
         }
-        }while (i>=0&&isP);
-        return isP;
+        return true;
     }
 
     public static boolean isPalindrome4(String p){
@@ -59,5 +54,28 @@ public class IsPalindrome {
         ArrayList<String> listB = (ArrayList<String>) listA.clone();
         Collections.reverse(listB);
         return listA.equals(listB);
+    }
+
+    public static boolean isPalindrome5(String p) {
+        p = p.toLowerCase();
+        char[] charArray = p.toCharArray();
+        for(int i = 0; i<(int)charArray.length/2; i++){
+            if (charArray[i]!=charArray[charArray.length-i-1]){
+                return false;
+            }
+        }return true;
+    }
+
+    public static boolean isPalindrome6(String p) {
+        p = p.toLowerCase();
+        String a = p.substring(0,p.length()/2);
+        String b;
+        if(p.length() ==(int)(p.length()/2)*2) {
+            b = p.substring(p.length() / 2, p.length());
+        }else{
+            b = p.substring(p.length() / 2 + 1, p.length());
+        }
+        b = new StringBuilder(b).reverse().toString();
+        return a.equals(b);
     }
 }

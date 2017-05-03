@@ -3,7 +3,9 @@ package com.kateromaniv.runners.homework.lesson6;
 import java.util.Arrays;
 
 public class EvenNumbersArray {
-    public static void main(String args[]) {
+    public static void main(String args[]) {evenNumberMenu();}
+
+    public static void evenNumberMenu(){
         int[] evenNumberArray = new int[10];
         int j = 0;
         for (int i = 2; i < 20; i++) {

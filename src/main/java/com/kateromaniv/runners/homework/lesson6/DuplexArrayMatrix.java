@@ -3,7 +3,9 @@ package com.kateromaniv.runners.homework.lesson6;
 import java.util.Random;
 
 public class DuplexArrayMatrix {
-    public static void main(String[] args) {
+    public static void main(String[] args) {arrayMatrix();}
+
+    public static void arrayMatrix(){
         int[][] duplexArray = new int[8][5];
         Random randomGenerator = new Random();
         for (int i = 0; i <= duplexArray.length; i++) {

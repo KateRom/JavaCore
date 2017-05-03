@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class InputArray {
-    public static void main(String args[]) {
+    public static void main(String args[]) {inputArrayMenu();}
+
+    public static void inputArrayMenu(){
         ArrayList<Integer> aList = new ArrayList<Integer>();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number, after each number press ENTER. To stop print 'exit'.");

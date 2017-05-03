@@ -6,7 +6,9 @@ import java.util.List;
 import java.util.Random;
 
 public class DuplexArray {
-    public static void main(String args[]) {
+    public static void main(String args[]) {duplexArrayMenu();}
+
+    public static void duplexArrayMenu(){
         Random randomGenerator = new Random();
         int[][] duplexArray = new int[8][5];
         List<Integer> aList = new ArrayList<Integer>();

@@ -5,7 +5,9 @@ import com.kateromaniv.runners.classwork.lesson4.*;
 import java.util.Scanner;
 
 public class ChooseTheTaskRunner {
-    public static void main(String args[]) {
+    public static void main(String args[]) {homeTaskMenu();}
+
+        public static void homeTaskMenu(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter 1, 2, 3, 4 or 5 to choose the task." +
                 "\n" + "1 - to identify right-angled triangle." +
@@ -33,11 +35,12 @@ public class ChooseTheTaskRunner {
                     case 5:
                         BiggerNumberRunner.menu5();
                         break;
+                    case 0:
+                        System.out.println("Program was stopped");
                     default:
                         System.out.println("You enter the number out fo range.");
                         break;
                 }  if (callValue==0){
-                    System.out.println("Program was stopped");
                     break;
                 }
                 System.out.println("Enter 1, 2, 3, 4 or 5 to choose the task. Enter 0 to stop the program");

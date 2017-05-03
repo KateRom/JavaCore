@@ -3,7 +3,9 @@ package com.kateromaniv.runners.homework.lesson6;
 import java.util.*;
 
 public class MinMaxRandomArray {
-    public static void main(String args[]){
+    public static void main(String args[]){minMaxArrayMenu();}
+
+    public static void minMaxArrayMenu(){
         Random randomGenerator = new Random();
         int[] randomArray = new int[15];
         List<Integer> aList = new ArrayList<Integer>();
