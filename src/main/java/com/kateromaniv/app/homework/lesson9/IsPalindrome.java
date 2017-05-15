@@ -78,4 +78,10 @@ public class IsPalindrome {
         b = new StringBuilder(b).reverse().toString();
         return a.equals(b);
     }
+
+    public static boolean isPalindrome7(String p) {
+        p = p.toLowerCase();
+        String b = new StringBuilder(p).reverse().toString();
+        return p.equals(b);
+    }
 }

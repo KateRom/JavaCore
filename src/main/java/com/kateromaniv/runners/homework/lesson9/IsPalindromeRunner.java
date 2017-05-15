@@ -15,6 +15,7 @@ public class IsPalindromeRunner {
         String palindrome4 = "moom";
         String palindrome5 = "moom";
         String palindrome6 = "mooom";
+        String palindrome7 = "mooom";
         boolean isPalindrome = IsPalindrome.palindromeString(palindrome);
         if(isPalindrome){
             System.out.println(palindrome + " is palindrome");
@@ -58,6 +59,12 @@ public class IsPalindromeRunner {
         }
 
         isPalindrome = IsPalindrome.isPalindrome6(palindrome6);
+        if(isPalindrome){
+            System.out.println(palindrome + " is palindrome");
+        }else {
+            System.out.println(palindrome + " is NOT palindrome");
+        }
+        isPalindrome = IsPalindrome.isPalindrome7(palindrome7);
         if(isPalindrome){
             System.out.println(palindrome + " is palindrome");
         }else {
