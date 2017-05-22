@@ -28,7 +28,7 @@ public class AlphabetGenerator {
                             decodedAlphabet = decodedAlphabet.append(String.valueOf(c));
                 }
             }
-        }while (decodedAlphabet.length()<=alphabetLength);
+        }while (decodedAlphabet.length()<alphabetLength);
         return decodedAlphabet;
     }
 }

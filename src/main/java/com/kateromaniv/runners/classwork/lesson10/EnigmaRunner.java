@@ -10,9 +10,10 @@ public class EnigmaRunner {
         String toEncode = "CABE";
         char start = ' ';
         char end = 'z';
-
-        String encoded = String.valueOf(Enigma.toEncode(toEncode,originalAlphabet,decodedAlphabet));
+        StringBuilder originalAlphabet = AlphabetGenerator.originalAlphabet(start, end);
+        StringBuilder decodedAlphabet = AlphabetGenerator.decodedAlphabet(start, end);
+        String encoded = String.valueOf(Enigma.enigmaCoder(toEncode,originalAlphabet,decodedAlphabet));
         System.out.println(encoded);
-        System.out.println(Enigma.toDecode(encoded,decodedAlphabet,originalAlphabet));
+        System.out.println(Enigma.enigmaCoder(encoded,decodedAlphabet,originalAlphabet));
     }
 }
