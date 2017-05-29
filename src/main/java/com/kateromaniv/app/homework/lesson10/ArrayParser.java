@@ -4,6 +4,7 @@ package com.kateromaniv.app.homework.lesson10;
  */
 public class ArrayParser {
     public static int[] arrayParser (String input, String splitter){
+        input = input.replaceAll("\\s","");
         String[] splitedArray = input.split(splitter);
         int[] intArray = new int[splitedArray.length];
         for (int i = 0; i<splitedArray.length; i++){
