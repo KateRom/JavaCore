@@ -2,29 +2,29 @@ package com.kateromaniv.runners.classwork.lesson13;
 
 /* Created by katr on 30.05.2017.
  */
-public class Bicycle {
+public class BicycleRunner {
     private int wheelSize;
     private String color = "red";
     private double speed;
     private boolean unUsed;
 
-    public Bicycle(int wheelSize, String color){
+    public BicycleRunner(int wheelSize, String color){
         this.color = color;
         this.wheelSize = wheelSize;
     }
 
-    public Bicycle(int wheelSize){
+    public BicycleRunner(int wheelSize){
         this();
         this.wheelSize = wheelSize;
     }
 
-    public Bicycle (double speed, int wheelSize, boolean unUsed){
+    public BicycleRunner(double speed, int wheelSize, boolean unUsed){
         this(wheelSize);
         this.speed = speed;
         this.unUsed = unUsed;
     }
 
-    public Bicycle(){
+    public BicycleRunner(){
         this.wheelSize = 26;
         this.color = "red";
         this.speed = 99.9;
