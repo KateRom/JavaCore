@@ -9,11 +9,12 @@ public class Person {
         this.name = name;
     }
 
+    public String getResponse (String question){
+        return "My answer is" + question;
+    }
+
     public final Person homework (){
         String homework = "Done";
         return this;
     }
-   /* public Person (){
-        this.name = "Kate";
-    }*/
 }

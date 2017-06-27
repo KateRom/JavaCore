@@ -10,8 +10,13 @@ public class Student extends Person {
         super(name);
         this.university = university;
     }
+    @Override
+    public  String getResponse(String question){
+        return "Ehhh, what was the question?";
+    }
 
     public void setUniversity(String university) {
+        if(university.equals("KNU")||university.equals("NAU")||university.equals("KPI"))
         this.university = university;
     }
 
@@ -23,7 +28,9 @@ public class Student extends Person {
         return response;
     }
 
+
     public static void main(String[] args) {
-//        System.out.println(Student.response);
+        Student student = new Student("Egor", "Kit Center");
+        System.out.println(student.getResponse("What is class?"));
     }
 }

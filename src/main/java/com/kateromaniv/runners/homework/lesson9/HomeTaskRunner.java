@@ -32,63 +32,60 @@ public class HomeTaskRunner {
                 "\n" + "\"lesson 9\" - to run all palindrome check methods from Lesson 8" +
                 "\n" + "\"exit\" - to stop the program");
         while (scanner.hasNextLine()) {
-            /*try {*/
-                String callValue = scanner.nextLine();
-                switch (callValue) {
-                    case "lesson3":
-                        Hometask3.converterMenu();
-                        break;
-                    case "lesson4":
-                        ChooseTheTaskRunner.homeTaskMenu();
-                        break;
-                    case "lesson6.1":
-                        DuplexArray.duplexArrayMenu();
-                        break;
-                    case "lesson6.2":
-                        DuplexArrayMatrix.arrayMatrix();
-                        break;
-                    case "lesson6.3":
-                        EvenNumbersArray.evenNumberMenu();
-                        break;
-                    case "lesson6.4":
-                        MinMaxRandomArray.minMaxArrayMenu();
-                        break;
-                    case "lesson6.5":
-                        InputArray.inputArrayMenu();
-                        break;
-                    case "lesson 6.6":
-                        OddNumbersArray.oddArrayMenu();
-                        break;
-                    case "lesson 6.7":
-                        RandomNumbers.randomNumbers();
-                        break;
-                    case "lesson8.1":
-                        BublesArraysRunner.bubbleSortMenu();
-                        break;
-                    case "lesson8.2":
-                        ChildrenKnowledgeCheckRunner.knowledgeCheckMenu();
-                        break;
-                    case "lesson8.3":
-                        RandomMaxRunner.randomMaxMenu();
-                        break;
-                    case "lesson8.4":
-                        SelectionSortRunner.selectionSortMenu();
-                        break;
-                    case "lesson9":
-                        IsPalindromeRunner.isPalindromeMenu();
-                        break;
-                    case "exit":
-                        System.out.println("Program was stopped");
-                        break;
-                    default:
-                        System.out.println("You enter wrong value. Try again.");
-                        break;
-                }
-                if (callValue.equals("exit")) {
+            String callValue = scanner.nextLine();
+            switch (callValue) {
+                case "lesson3":
+                    Hometask3.converterMenu();
                     break;
-                }
-            /*}catch (java.lang.NumberFormatException e){
-            }*/
+                case "lesson4":
+                    ChooseTheTaskRunner.homeTaskMenu();
+                    break;
+                case "lesson6.1":
+                    DuplexArray.duplexArrayMenu();
+                    break;
+                case "lesson6.2":
+                    DuplexArrayMatrix.arrayMatrix();
+                    break;
+                case "lesson6.3":
+                    EvenNumbersArray.evenNumberMenu();
+                    break;
+                case "lesson6.4":
+                    MinMaxRandomArray.minMaxArrayMenu();
+                    break;
+                case "lesson6.5":
+                    InputArray.inputArrayMenu();
+                    break;
+                case "lesson 6.6":
+                    OddNumbersArray.oddArrayMenu();
+                    break;
+                case "lesson 6.7":
+                    RandomNumbers.randomNumbers();
+                    break;
+                case "lesson8.1":
+                    BublesArraysRunner.bubbleSortMenu();
+                    break;
+                case "lesson8.2":
+                    ChildrenKnowledgeCheckRunner.knowledgeCheckMenu();
+                    break;
+                case "lesson8.3":
+                    RandomMaxRunner.randomMaxMenu();
+                    break;
+                case "lesson8.4":
+                    SelectionSortRunner.selectionSortMenu();
+                    break;
+                case "lesson9":
+                    IsPalindromeRunner.isPalindromeMenu();
+                    break;
+                case "exit":
+                    System.out.println("Program was stopped");
+                    break;
+                default:
+                    System.out.println("You enter wrong value. Try again.");
+                    break;
+            }
+            if (callValue.equals("exit")) {
+                break;
+            }
         }
     }
 }
