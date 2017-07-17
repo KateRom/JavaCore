@@ -8,7 +8,9 @@ import java.util.Arrays;
 /*Created by katr on 30.05.2017.
  */
 public class ReadWriteWordsRunner {
-    public static void main (String args[]){
+    public static void main (String args[]){readWriteWordsMenu();}
+
+    public static void readWriteWordsMenu(){
         String splitter = " ";
         String pathToRead = "D:\\inputWords.txt";
         String pathToWrite = "D:\\output.txt";

@@ -8,7 +8,9 @@ import java.util.Scanner;
 /*Created by katr on 29.05.2017.
  */
 public class WordSplitterRunner {
-    public static void main (String argz[]) {
+    public static void main (String argz[]) {wordSplitterMenu();}
+
+    public static void wordSplitterMenu(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Please enter the string for processing");
         String input = sc.nextLine();

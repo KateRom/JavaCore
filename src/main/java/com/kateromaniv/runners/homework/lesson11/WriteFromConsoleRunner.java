@@ -7,7 +7,9 @@ import java.util.Scanner;
 /*Created by katr on 31.05.2017.
  */
 public class WriteFromConsoleRunner {
-    public static void main (String args[]){
+    public static void main (String args[]){writeFromConsoleMenu();}
+
+    public static void writeFromConsoleMenu(){
         Scanner sc = new Scanner(System.in);
         String input = "";
         String toExit;

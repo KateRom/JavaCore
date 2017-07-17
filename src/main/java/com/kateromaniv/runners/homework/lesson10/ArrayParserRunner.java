@@ -9,7 +9,9 @@ import java.util.Scanner;
 /*Created by katr on 25.05.2017.
  */
 public class ArrayParserRunner {
-    public static void main (String argz[]){
+    public static void main (String argz[]){arrayParserMenu();}
+
+    public static void arrayParserMenu(){
         Scanner sc = new Scanner(System.in);
         System.out.println("This program will sort numbers you enter." +
         "\n Enter any symbol you will use after each number"  );

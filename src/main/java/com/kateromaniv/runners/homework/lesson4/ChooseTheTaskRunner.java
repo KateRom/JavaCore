@@ -37,6 +37,7 @@ public class ChooseTheTaskRunner {
                         break;
                     case 0:
                         System.out.println("Program was stopped");
+                        break;
                     default:
                         System.out.println("You enter the number out fo range.");
                         break;

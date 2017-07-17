@@ -5,7 +5,8 @@ import com.kateromaniv.app.homework.lesson12.Human;
 /*Created by katr on 21.06.2017.
  */
 public class HumanRunner {
-    public static void main(String[] args) {
+    public static void main(String[] args) {humanMenu();}
+    public static void humanMenu(){
         Human h = new Human(23, "Stefan");
         System.out.println(h.getName() + " is " + h.getAge());
     }

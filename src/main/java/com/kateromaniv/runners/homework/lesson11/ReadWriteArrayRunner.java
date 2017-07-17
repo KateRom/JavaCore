@@ -8,7 +8,9 @@ import java.util.Arrays;
 /* Created by katr on 30.05.2017.
  */
 public class ReadWriteArrayRunner {
-    public static void main (String args[]){
+    public static void main (String args[]){readWriteArrayMenu();}
+
+    public static void readWriteArrayMenu(){
         String splitter1 = ",";
         String splitter2 = ";";
         String pathToRead = "D:\\input.txt";

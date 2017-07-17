@@ -8,7 +8,9 @@ import java.util.Scanner;
 /*Created by katr on 29.05.2017.
  */
 public class AlphabetArrayParserRunner {
-    public static void main (String argz[]) {
+    public static void main (String argz[]) {alphabetArrayParserMenu();}
+
+    public static void alphabetArrayParserMenu() {
         Scanner sc = new Scanner(System.in);
         System.out.println("This program will sort numbers you enter." +
                 "\n Enter any symbol you will use after each number");
