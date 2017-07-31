@@ -9,7 +9,7 @@ public class ReadWriteWords {
         String[] splittedArray = input.split(splitter);
         String[] result = new String[splittedArray.length];
         String isTrue = " is palindrome";
-        String isFalse= " is NOT palinrome";
+        String isFalse= " is NOT palindrome";
         for (int i = 0; i<splittedArray.length-1; i++) {
                 if (IsPalindrome.isPalindrome1(splittedArray[i+1]))
                     result[i] = splittedArray[i+1] + isTrue;
