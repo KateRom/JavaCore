@@ -12,8 +12,16 @@ public class Category {
         this.allContacts = allContacts;
     }
 
+    public Category(){
+
+    }
+
     public HashMap<String, HashMap<String, ArrayList<String>>> getAllContacts(){
         return allContacts;
+    }
+
+    public void setAllContacts(HashMap<String, HashMap<String, ArrayList<String>>> allContacts){
+        this.allContacts = allContacts;
     }
 
     public HashMap<String, HashMap<String, ArrayList<String>>> setCategorySet (String categoryName, String name, String number){
@@ -28,6 +36,10 @@ public class Category {
         if(!allContacts.containsKey(categoryName))
             return false;
         else return true;
+    }
+
+    public void addNewContactToCategory(String categoryName, HashMap <String, ArrayList<String>> oneContact){
+        allContacts.replace(categoryName, oneContact);
     }
 
     public HashMap<String,ArrayList<String>> getContactsOfCategory(String category){

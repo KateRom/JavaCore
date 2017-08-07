@@ -44,9 +44,11 @@ public class Contact {
         return numbersForName;
     }
 
-    public ArrayList<String> addNewNumder(ArrayList<String> numbersForName, String number){
+    public HashMap<String,ArrayList<String>> addNewNumder(String name, String number){
+        ArrayList<String> numbersForName = contactsOfCategory.get(name);
         numbersForName.add(number);
-        return numbersForName;
+        contactsOfCategory.replace(name,numbersForName);
+        return contactsOfCategory;
     }
 
     public void updateName(String oldName, String newName){
